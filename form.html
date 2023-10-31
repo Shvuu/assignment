@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns:10% 25% 10% 25% ;
+            
+            padding: px;
+            
+        }
+        .grid-item {
+  background-color: rgba(228, 132, 132, 0.8);
+  border: 1px  rgba(0, 0, 0, 0.8);
+  padding: 8px;
+  
+  font-size: 15px;
+  margin: 2px ;
+  text-align: left;
+}
+.centered-element {
+    margin: 0 auto;
+    width: 50%; /* Adjust the width as needed */
+}
+.image{
+    margin: 0 auto;
+    ; /* Adjust the width as needed */
+    width: 10%;
+    height: auto   ;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}
+#name{
+    background-color: #c7ca1a;
+    opacity: 0.2;
+}
+#email{
+    background-color: hsl(211, 54%, 55%);
+    opacity: 0.6;
+}
+#Address{
+    background-color: #21e42a;
+    opacity: 0.5;
+}
+#Father{
+    background-color: #17a16c;
+    opacity: 0.4;
+}
+    </style>
+</head>
+
+<body>
+    
+    <img src="logo.jpg" class="image" >
+  
+    <h3 class="centered-element">Details for Enrolling in 1st batch</h3>
+    <div class="grid-container">
+      <div class="grid-item">  <label for="name" >Name :</label></div>
+        <input type="text" id="name" name="name" >
+        <div class="grid-item">  <label for="email">Email:</label></div>
+    <input type="email" id="email" name="email" required >
+    <div class="grid-item">  <label for="Address">Address :</label></div>
+    <input type="text" id="Address" name="name" >
+    <div class="grid-item">  <label for="Father">Father Name :</label></div>
+<input type="email" id="Father" name="email" required >
+   
+    </div>
+</body>
+</html>
